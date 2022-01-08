@@ -1,0 +1,37 @@
+.form{
+    margin: 50px auto;
+    width: 700px;
+    height: 700px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+h1,p{
+    text-align: center;
+}
+.form__infomation{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+label{
+    width: 90%;
+    font-weight: bold;
+    display: block;
+}
+
+
+button{
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    outline: none;
+    margin-top:30px;
+    box-shadow: none;
+    background-color: brown;
+    border-radius: 3px;
+    border: 1px solid;
+
+}
