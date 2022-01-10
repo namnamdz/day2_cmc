@@ -2,7 +2,8 @@ import React from 'react'
 import './input.css'
 function InputBox(props) {
     return (
-        <input 
+        <input
+            type={props.type}
             className='input'
             placeholder={props.name}
             onChange={props.handleChange}>

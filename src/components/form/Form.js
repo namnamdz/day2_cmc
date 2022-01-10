@@ -30,22 +30,29 @@ function Form() {
     
     const submibForm = (e) =>{
         e.preventDefault();
-        alert(`Ho ten: ${name},SDT:${phoneNumber}, Khach: ${numberOfGuests}, Ngay to chuc: ${dateOfOrganization}, Dia chi:${address}, Loai sk: ${typeEvent}`)
-    }
+        alert(`Ho ten: ${name},SDT:${phoneNumber}, 
+            Khach: ${numberOfGuests},
+            Ngay to chuc: ${dateOfOrganization},
+            Dia chi:${address},
+            Loai sk: ${typeEvent}`)
+        }
     return (
         <div className='form'>
             <h1>Liên hệ đặt tiệc</h1>
             <p>Kế thừa tinh hoa của Golden Gate Restaurant chúng tôi cung cấp giải pháp dịch vụ tiệc tại gia đạt chuẩn chất lượng nhà hàng giúp khách hàng</p>
             <div className='form__infomation'>
             <InputBox
+                type='text'
                 name='Họ và tên'
                 handleChange={(event)=>handleChangName(event)}
              />
              <InputBox
+                type='number'
                 name='Số lượng khách'
                 handleChange={(event)=>handleChangnumberOfGuests(event)}
              />
              <InputBox
+                type='text'
                 name='Số điện thoại'
                 handleChange={(event)=>handleChangphoneNumber(event)}
              />
@@ -54,10 +61,12 @@ function Form() {
                 handleChange={(event)=>handleChangdateOfOrganization(event)}
              />
              <InputBox
+                type='date'
                 name='Địa chỉ'
                 handleChange={(event)=>handleChangaddress(event)}
              />
              <InputBox
+                type='text'
                 name='Loại sự kiện'
                 handleChange={(event)=>handleChangtypeEvent(event)}
              />
